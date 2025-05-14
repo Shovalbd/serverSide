@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:3000
-@email = tal@example.com
+@email = shoval@example.com
 @password = test123456
-@username = tal12
+@username = shoval12
 @googleCredential = YOUR_GOOGLE_ID_TOKEN
 @useridid = 67e04c93c04c2fd893583d9e
 
@@ -56,7 +56,7 @@ Content-Type: application/json
 Authorization: Bearer {{newAccessToken}}
 
 {
-    "owner": "Shoval",
+    "owner": "shoval ben david",
     "title": "My first post",
     "content": "This is my first post!"
 }
@@ -73,7 +73,7 @@ Authorization: Bearer {{newAccessToken}}
 {
   "postId": "{{postId}}", 
   "comment": "This is a test comment",
-  "owner": "Test"
+  "owner": "shoval ben david"
 }
 
 ### Extract Comment ID
@@ -115,8 +115,6 @@ Authorization: Bearer {{newAccessToken}}
 GET {{baseUrl}}/user
 Authorization: Bearer {{newAccessToken}}
 
-
-
 ### 1️⃣3️⃣ Test User Profile - Update Profile 
 # @name updateUserProfile 
 PUT {{baseUrl}}/user
@@ -124,7 +122,7 @@ Content-Type: application/json
 Authorization: Bearer {{newAccessToken}}
 
 {
-    "name": "Updated Name",
+    "name": "shoval ben david",
     "profilePicture": "https://example.com/avatar.jpg",
     "bio": "Updated Bio"
 }
@@ -132,9 +130,6 @@ Authorization: Bearer {{newAccessToken}}
 ### 1️⃣4️⃣ Fetch Profile Again to Verify Updates 
 GET {{baseUrl}}/user/profile 
 Authorization: Bearer {{newAccessToken}}
-
-
-
 
 ###if with cookies
 
@@ -146,7 +141,7 @@ Content-Type: application/json
 {
     "email": "testuser1@example.com",
     "password": "password123",
-    "username": "testuser1"
+    "username": "shoval ben david"
 }
 
 ### 2️⃣ Login User
@@ -178,9 +173,6 @@ Cookie: accessToken={{refreshTokens.response.body.cookies.accessToken}}
 # @name logoutUser
 POST {{baseUrl}}/auth/logout
 Cookie: accessToken={{loginUser.response.body.accessToken}}
-
-
-
 
 ### checking get user by id noa new function
 

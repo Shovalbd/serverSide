@@ -36,9 +36,9 @@ const userInfo: UserInfo = {
 }
 
 const invalidUserInfo: UserInfo = {
-    email: "mati14@gmail.com",
+    email: "shovalbd@gmail.com",
     password: "",
-    username: "leebenshimon"
+    username: "shovalbd"
 }
 
 describe("Auth Tests", () => {
